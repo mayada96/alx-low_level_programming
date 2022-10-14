@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Entery
+ * main - Entery point
  * My hello print task
- * Rreturn: return 0 after printing
+ * Return: return 1 after program execution
  */
 
 int main(void)
