@@ -3,8 +3,9 @@
 /**
  * main - Entry point
  *
- * return: return 1 after excution
+ * Return: return 1 after excution
  */
+
 int main(void)
 {
 	printf("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
