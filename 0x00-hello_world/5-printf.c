@@ -3,7 +3,7 @@
 /**
  * main - Entery
  * My hello print task
- * Rreturn: return 1 after printing
+ * Rreturn: return 0 after printing
  */
 
 int main(void)
