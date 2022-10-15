@@ -10,15 +10,14 @@ int main(void)
 {
 	int n = 0;
 	int s = 9;
-
-	while (n <= 8)
+	
+	for (n = 0 ; n <= 9 ; n++)
 	{
 		putchar(n + '0');
+		if (n < 9)
 		putchar(44);
 		putchar(' ');
-		n++;
 	}
-	putchar(s + '0' + '\n');
+	putchar('\n');
 	return (0);
 }
-
