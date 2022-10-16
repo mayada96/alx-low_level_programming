@@ -16,7 +16,7 @@ int main(void)
 		second_nums = first_nums + 1;
 
 	for ( ; second_nums < 100 ; second_nums++)
-		{
+	{
 			putchar (first_nums / 10 + '0');
 			putchar (first_nums % 10 + '0');
 			putchar (' ');
@@ -32,7 +32,7 @@ int main(void)
 			putchar(',');
 			putchar (' ');
 
-		}
+	}
 
 	}
 
