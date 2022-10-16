@@ -12,12 +12,12 @@ int main(void)
 	int m;
 	int l;
 
-	while (n <= 8)
+	for ( ; n <= 7 ; n++)
 	{
 		m = n + 1;
-		l = n + 2;
-		while (m <= 8)
+		for ( ; m <= 8 ; m++)
 		{
+			l = m + 1;
 		for ( ; l <= 9 ; l++)
 		{
 			putchar(n + '0');
@@ -28,9 +28,7 @@ int main(void)
 			putchar(44);
 			putchar(' ');
 		}
-		m++;
 		}
-		n++;
 	}
 	putchar('\n');
 	return (0);
