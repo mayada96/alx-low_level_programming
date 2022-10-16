@@ -20,10 +20,13 @@ int main(void)
 		{
 			C = 0;
 			while (C <= 9)
-			{ 
-				D = 0;
-				for (D = 1 ; D <= 9 ; D++)
+			{
+				for (D = 0 ; D <= 9 ; D++)
 				{
+				if ((A == 0) && (B == 0) && (C ==0) && (D == 0))
+					{
+						D = 1;
+					}
 					putchar(A + '0');
 					putchar(B + '0');
 					putchar(' ');
