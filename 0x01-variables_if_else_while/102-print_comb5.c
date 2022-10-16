@@ -21,24 +21,24 @@ int main(void)
 			C = 0;
 			while (C <= 9)
 			{
-				for (D = 0 ; D <= 9 ; D++)
-				{
-				if ((A == 0) && (B == 0) && (C ==0) && (D == 0))
-					{
-						D = 1;
-					}
-					putchar(A + '0');
-					putchar(B + '0');
-					putchar(' ');
-					putchar(C + '0');
-					putchar(D + '0');
-				if ((A == 9) && (B == 8) & (C == 9) && (D == 9))
-				{
-							break;
-				}
-							putchar(44);
-							putchar(' ');
-				}
+			for (D = 0 ; D <= 9 ; D++)
+			{
+			if ((A == 0) && (B == 0) && (C == 0) && (D == 0))
+			{
+				D = 1;
+			}
+			putchar(A + '0');
+			putchar(B + '0');
+			putchar(' ');
+			putchar(C + '0');
+			putchar(D + '0');
+			if ((A == 9) && (B == 8) & (C == 9) && (D == 9))
+			{
+				break;
+			}
+			putchar(44);
+			putchar(' ');
+			}
 				C++;
 			}
 			B++;
