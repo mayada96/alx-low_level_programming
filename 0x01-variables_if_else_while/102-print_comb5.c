@@ -21,7 +21,7 @@ int main(void)
 			C = 0;
 			while (C <= 9)
 			{
-				for (D = 0 ; D <= 9 ; D++)
+				for (D = 1 ; D <= 9 ; D++)
 				{
 					putchar(A + '0');
 					putchar(B + '0');
