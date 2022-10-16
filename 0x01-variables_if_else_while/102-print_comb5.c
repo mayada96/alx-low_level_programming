@@ -8,43 +8,80 @@
 
 int main(void)
 {
-	int A = 0;
-	int B;
-	int C;
-	int D;
+	int first_nums;
 
-	while (A <= 9)
+	int second_nums;
+
+
+
+
+
+	for (first_nums = 0; first_nums < 100 ; first_nums++)
+
 	{
-		B = 0;
-		while (B <= 8)
+
+		for (second_nums = first_nums + 1 ; second_nums < 100; second_nums++)
+
 		{
-			C = 0;
-			while (C <= 9)
+
+
+
+			putchar (first_nums / 10 + '0');
+
+			putchar (first_nums % 10 + '0');
+
+
+
+
+
+			putchar (' ');
+
+
+
+			putchar (second_nums / 10 + '0');
+
+			putchar (second_nums % 10 + '0');
+
+
+
+
+
+			if (first_nums == 98 && second_nums == 99)
+
 			{
-			for (D = 0 ; D <= 9 ; D++)
-			{
-			if ((A == 0) && (B == 0) && (C == 0) && (D == 0))
-			{
-				D = 1;
-			}
-			putchar(A + '0');
-			putchar(B + '0');
-			putchar(' ');
-			putchar(C + '0');
-			putchar(D + '0');
-			if ((A == 9) && (B == 8) & (C == 9) && (D == 9))
-			{
+
 				break;
+
 			}
-			putchar(44);
-			putchar(' ');
-			}
-				C++;
-			}
-			B++;
+
+
+
+
+
+			putchar(',');
+
+			putchar (' ');
+
+
+
+
+
 		}
-		A++;
+
+
+
 	}
-					putchar('\n');
-					return (0);
+
+
+
+	putchar('\n');
+
+
+
+
+
+	return (0);
+
+
+
 }
