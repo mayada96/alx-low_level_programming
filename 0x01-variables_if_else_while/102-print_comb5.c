@@ -8,18 +8,20 @@
 
 int main(void)
 {
-	int A;
-	int B = 0;
+	int A = 0;
+	int B;
 	int C;
 	int D;
 
-	for (A = 0 ; A <= 9 ; A++)
+	while (A <= 9)
 	{
+		B = 0;
 		while (B <= 8)
 		{
-			for ( ; C <= 9 ; C++)
+			C = 0;
+			while (C <= 9)
 			{
-				for (D = 1 ; D <= 9 ; D++)
+				for (D = 0 ; D <= 9 ; D++)
 				{
 					putchar(A + '0');
 					putchar(B + '0');
@@ -31,10 +33,12 @@ int main(void)
 							putchar(44);
 							putchar(' ');
 				}
+				C++;
 			}
 			B++;
 		}
+		A++;
 	}
 					putchar('\n');
 					return (0);
-							}
+}
