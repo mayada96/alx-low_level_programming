@@ -28,8 +28,10 @@ int main(void)
 					putchar(' ');
 					putchar(C + '0');
 					putchar(D + '0');
-				if ((A == 9) && (B == 8) & (C == 9) && (D == 9))
+				if((A == 9) && (B == 8) & (C == 9) && (D == 9))
+				{
 							break;
+				}
 							putchar(44);
 							putchar(' ');
 				}
