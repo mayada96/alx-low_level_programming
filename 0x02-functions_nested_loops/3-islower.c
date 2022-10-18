@@ -2,6 +2,7 @@
 
 /**
  * _islower -check wether C is lowercase
+ * @c: the carecter to print
  *
  * Return: 1 on success
  * return: 0 atherwise
