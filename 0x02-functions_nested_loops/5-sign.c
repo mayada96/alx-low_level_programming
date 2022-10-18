@@ -5,7 +5,7 @@
  * @n: the charecter to be print
  *
  * Return: 1 on positive
- * on minus -1 on zero 0
+ * on minus -1 on zero put zero
  */
 
 int print_sign(int n)
