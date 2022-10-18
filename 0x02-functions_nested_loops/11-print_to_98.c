@@ -9,15 +9,35 @@
 
 void print_to_98(int n)
 {
-	for (n = 0 ; n <= 98 ; n++)
+	int a, j;
+
+
+	if (n <= 98)
 	{
-		_putchar(n + '0');
-		if (n == 98)
+		for (a = n ; a <= 98 ; a++)
+		{
+		_putchar(a + '0');
+		if (a == 98)
 		{
 			break;
 		}
 		_putchar(',');
 		_putchar(' ');
+		_putchar('\n');
+		}
 	}
-	_putchar('\n');
+	else if (n >= 98)
+	{
+		for (j = n ; j >= 98 ; j--)
+		{
+			_putchar(j + '0');
+			if (j == 98)
+			{
+				break;
+			}
+			_putchar(',');
+			_putchar(' ');
+			_putchar('\n');
+		}
+	}
 }
