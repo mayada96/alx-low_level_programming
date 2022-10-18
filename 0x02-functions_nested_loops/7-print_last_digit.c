@@ -2,18 +2,18 @@
 
 /**
  * print_last_digit -print the last digit of a number
- * @n: the number to be prtint
+ * @a: the number to be prtint
  *
  * Return: o with the last number
  */
 
-int print_last_digit(int n)
+int print_last_digit(int a)
 {
-	if (n < 0)
+	if (a < 0)
 	{
-		n = -n;
+		a = -a;
 	}
-	n = n % 10;
-	_putchar(n + '0');
-	return (n);
+	a = a % 10;
+	_putchar(a + '0');
+	return (a);
 }
