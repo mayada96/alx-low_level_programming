@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * times table -Print the numbers ib tables
+ * times_table -Print the numbers ib tables
  *
  * Return: nothing on success
  */
@@ -14,16 +14,14 @@ void times_table(void)
 	{
 		_putchar(48);
 		if (a == 9)
-		{
+	       	{
 			break;
 		}
 		_putchar(',');
 		_putchar(' ');
 		_putchar(' ');
 	}
-
 	_putchar('\n');
-	
 	for (b = 0 ; b <= 9 ; b++)
 	{
 		_putchar(b + '0');
@@ -35,9 +33,7 @@ void times_table(void)
 		_putchar(' ');
 		_putchar(' ');
 	}
-
 	_putchar('\n');
-
 	for (c = 0 ; c <= 18 ; c += 2)
 	{
 		if (c > 9)
