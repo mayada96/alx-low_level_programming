@@ -2,7 +2,6 @@
 
 /**
  * main - couse an infinit loop
- * don’t delete it!
  * Return:0
  */
 
@@ -13,6 +12,7 @@ int main(void)
 	printf("Infinite loop incoming :(\n");
 
 	i = 0;
+
 	while (i < 10)
 	{
 		putchar(i);
