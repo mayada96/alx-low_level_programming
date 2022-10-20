@@ -2,7 +2,6 @@
 
 /**
  * main - couse an infinit loop
- * @while:cousing the infinit loop
  * Return:0
  */
 
