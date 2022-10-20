@@ -2,6 +2,7 @@
 
 /**
  * main - couse an infinit loop
+ * break don't delet it!
  * Return:0
  */
 
