@@ -2,7 +2,7 @@
 
 /**
  * main - couse an infinit loop
- * break don't delet it!
+ * don't delet it!
  * Return:0
  */
 
@@ -20,6 +20,5 @@ int main(void)
 	}
 
 	printf("Infinite loop avoided! \\o/\n");
-
 	return (0);
 }
