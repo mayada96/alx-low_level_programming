@@ -2,7 +2,7 @@
 
 /**
  * main - couse an infinit loop
- * @while loop: cousing the infinit loop
+ * don’t delete it!
  * Return:0
  */
 
