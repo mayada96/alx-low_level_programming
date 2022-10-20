@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * _isupper -print the uppercase charekter
+ * _isupper - print the uppercase alpha
+ * @c: the charekter to be interd
  *
- * Returrn: the  upper char
+ * Return: 1 on success
  */
 
 int _isupper(int c)
