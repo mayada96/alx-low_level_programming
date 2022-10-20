@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - couse an infinit loop
- * don't delet it!
+ * main - couse an infinit loop don't delet it!
  * Return:0
  */
+
 int main(void)
 {
 	int i;
