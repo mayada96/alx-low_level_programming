@@ -2,7 +2,7 @@
 
 /**
  * main - couse an infinit loop
- * while loop: cousing the infinit loop
+ * @while loop: cousing the infinit loop
  * Return:0
  */
 
