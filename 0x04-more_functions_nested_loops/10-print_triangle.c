@@ -9,7 +9,9 @@
 
 void print_triangle(int size)
 {
-	int i, l, m;
+	int l;
+	int m;
+	int i;
 
 	if (size > 0)
 	{
