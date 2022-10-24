@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - assining th variable to 98
- * @*n: the pointer to 98
+ * @n: the pointer to 98
  *
  * Return: void
  */
