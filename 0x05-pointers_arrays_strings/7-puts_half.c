@@ -10,29 +10,26 @@
 
 void puts_half(char *str)
 {
-	int i, even, odd;
+	int i, e, o;
 
 	i = 0;
-
-	while (*str != '\0')
+	while (str[i] != '\0')
 	{
-	       i++;
+		i++;
 	}
-	even = (i + 1) / 2;
 
-	if (even == 0)
+	if (i % 2 == 0)
 	{
-		for (i = even ; str[i] ; i++)
+		for (e = i / 2 ; str[i] ; i++)
 		{
-			printf("%d", str[i]);
+			printf("%d", str[e]);
 		}
 	}
 	else
 	{
-		odd = (i - 1) / 2;
-		for (i = odd ; str[i] ; i++)
+		for (o = (i - 1) / 2 ; o < (i - 2) ; o++)
 		{
-			printf("%d", str[i]);
+			printf("%d", str[o + 1]);
 		}
 	}
 
