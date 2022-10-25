@@ -22,16 +22,16 @@ void puts_half(char *str)
 	{
 		for (e = i / 2 ; str[i] ; i++)
 		{
-			printf("%d", str[e]);
+			_putchar(str[e]);
 		}
 	}
 	else
 	{
 		for (o = (i - 1) / 2 ; o < (i - 2) ; o++)
 		{
-			printf("%d", str[o + 1]);
+			_putchar(str[o + 1]);
 		}
 	}
 
-	printf("\n");
+	_putchar('\n');
 }
