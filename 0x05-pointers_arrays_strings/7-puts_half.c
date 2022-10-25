@@ -3,25 +3,38 @@
 
 /**
  * puts_half - print the second half of a string
- * &str: the pointer to the string array
+ * @str: the pointer to the string array
  *
  * Return: the half string
  */
 
 void puts_half(char *str)
 {
-	int i, even;
-	
+	int i, even, odd;
+
 	i = 0;
+
 	while (*str != '\0')
 	{
 	       i++;
 	}
 	even = (i + 1) / 2;
-	
-	for (i = even ; str[i] ; i++)
+
+	if (even == 0)
 	{
-		printf("%d", str[i]);
+		for (i = even ; str[i] ; i++)
+		{
+			printf("%d", str[i]);
+		}
 	}
+	else
+	{
+		odd = (i - 1) / 2;
+		for (i = odd ; str[i] ; i++)
+		{
+			printf("%d", str[i]);
+		}
+	}
+
 	printf("\n");
 }
