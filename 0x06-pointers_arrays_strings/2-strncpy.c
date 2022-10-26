@@ -3,7 +3,7 @@
 /**
  * _strncpy - to copy string one into string 2
  * @dest: pointer to the first string
- * @scr: pointer to the second empty string
+ * @src: pointer to the second empty string
  * @n: bytes to be copied
  *
  * Return: the copy of the string
