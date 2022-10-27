@@ -16,11 +16,11 @@ int _strcmp(char *s1, char *s2)
 	{
 		if (*s2 == '\0')
 		{
-			i = i + 5;
+			i = i + 1;
 		}
 		else if (*s1 < *s2)
 		{
-			i = i - 5;
+			i = i - 1;
 		}
 		else if (*s1 == *s2)
 		{
@@ -28,14 +28,14 @@ int _strcmp(char *s1, char *s2)
 		}
 		else if (*s1 > *s2)
 		{
-			i = i + 5;
+			i = i + 1;
 		}
 		s1++;
 		s2++;
 	}
 	if (*s2 != '\0' && !*s1)
 	{
-		i = i - 5;
+		i = i - 1;
 	}
 	return (i);
 }
