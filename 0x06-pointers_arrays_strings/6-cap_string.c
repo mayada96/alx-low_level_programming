@@ -15,18 +15,30 @@ char *cap_string(char *i)
 
 	for (l = 0 ; i[l] != '\0' ; l++)
 	{
-		for (m = 0 ; m <= 12 ; m++)
+		if (l != 0)
 		{
-			if (i[l] == sep[m])
+			for (m = 0 ; m <= 12 ; m++)
 			{
-				j = l + 1;
-				if (isalpha(i[j]))
+				if (i[l] == sep[m])
 				{
-					if (i[j] >= 97 && i[j] <= 122)
+					j = l + 1;
+					if (isalpha(i[j]))
 					{
-						i[j] = i[j] - 32;
+						if (i[j] >= 97 && i[j] <= 122)
+						{
+							i[j] = i[j] - 32;
+						}
 					}
-				
+				}
+			}
+		}
+		else
+		{
+			if (isalpha(i[l]))
+			{
+				if (i[l] >= 97 && i[l] <= 122)
+				{
+					i[l] = i[l] - 32;
 				}
 			}
 		}
