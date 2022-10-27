@@ -3,7 +3,7 @@
 
 /**
  * string_toupper - converting string to upper case
- * @*: all the chareckter to uppercasee
+ * @l: all the chareckter to uppercasee
  *
  * Return: the upper chareckters
  */
@@ -11,8 +11,8 @@
 char *string_toupper(char *l)
 {
 	int i = 0;
-	
-	for (i = 0 ; l[i] !='\0' ; i++)
+
+	for (i = 0 ; l[i] != '\0' ; i++)
 	{
 		if (isalpha(l[i]))
 		{
