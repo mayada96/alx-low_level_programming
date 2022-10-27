@@ -7,4 +7,5 @@ int _strcmp(char *s1, char *s2);
 char *string_toupper(char *l);
 char *cap_string(char *i);
 char *leet(char *x);
-
+char *rot13(char *x);
+void print_number(int n);
