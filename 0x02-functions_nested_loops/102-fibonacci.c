@@ -14,12 +14,12 @@ int main(void)
 	n1 = 1;
 	n2 = 2;
 	printf("%ld, %ld, ", n1, n2);
-	for (i = 3 ; i < 50 ; i++)
+	for (i = 3 ; i <= 50 ; i++)
 	{
 		n3 = n1 + n2;
 		n1 = n2;
 		n2 = n3;
-		if (i == 49)
+		if (i == 50)
 		{
 			printf("%ld\n", n3);
 		}
