@@ -8,25 +8,23 @@
 
 int main(void)
 {
-	int i, n1;
-	int n3, n2;
+	int i;
+	long int n[50];
 
-	n1 = 1;
-	n2 = 2;
-	n3 = 0;
-	for (i = 3 ; i <= 50 ; i++)
+	n[0] = 1;
+	n[2] = 2;
+	printf("%ld, %ld, ", n[0], n[1]);
+	for (i = 2 ; i < 50 ; i++)
 	{
-		n3 = n1 + n2;
-		n1 = n2;
-		n2 = n3;
-		if (i == 50)
+		n[i] = n[i - 1] + n[i - 2];
+		if (i == 49)
 		{
-			printf("%d", n3);
+			printf("%ld", n[i]);
 			break;
 		}
 		else
 		{
-			printf("%d, ", n3);
+			printf("%ld, ", n[i]);
 		}
 	}
 	printf("\n");
