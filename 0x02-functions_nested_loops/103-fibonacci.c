@@ -18,7 +18,7 @@ int main(void)
 		n3 = n1 + n2;
 		n1 = n2;
 		n2 = n3;
-		if (n3 % 2 == 0)
+		if ((n3 % 2 == 0) && (n3 < 4000000))
 		{
 			sum = sum + n3;
 		}
@@ -28,5 +28,5 @@ int main(void)
 		}
 	}
 	printf("%ld\n", sum);
-	return(0);
+	return (0);
 }
