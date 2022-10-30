@@ -9,24 +9,24 @@
 int main(void)
 {
 	int i;
-	long int n[50];
+	long int n1, n2, n3;
 
-	n[0] = 1;
-	n[2] = 2;
-	printf("%ld, %ld, ", n[0], n[1]);
-	for (i = 2 ; i < 50 ; i++)
+	n1 = 1;
+	n2 = 2;
+	printf("%ld, %ld, ", n1, n2);
+	for (i = 3 ; i < 50 ; i++)
 	{
-		n[i] = n[i - 1] + n[i - 2];
+		n3 = n1 + n2;
+		n1 = n2;
+		n2 = n3;
 		if (i == 49)
 		{
-			printf("%ld", n[i]);
-			break;
+			printf("%ld\n", n3);
 		}
 		else
 		{
-			printf("%ld, ", n[i]);
+			printf("%ld, ", n3);
 		}
 	}
-	printf("\n");
 	return (0);
 }
