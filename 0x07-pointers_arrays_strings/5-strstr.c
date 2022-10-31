@@ -13,7 +13,7 @@ char *_strstr(char *haystack, char *needle)
 {
 	char *ph;
 	size_t n = strlen(needle);
-	
+
 	ph = haystack;
 	while (*ph)
 	{
