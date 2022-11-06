@@ -9,17 +9,27 @@
 
 int main(void)
 {
-	long int n;
-	long int i;
+	unsigned long n = 962852475143;
+	unsigned long i, j, isprime;
 
-	n = 612852475143;
 	for (i = 2 ; i <= n ; i++)
 	{
-		while (n % i == 0)
+		if (n % i == 0)
 		{
-			n = n / i;
+			isprime = 1;
+			for (j = 2 ; j <= i / 2 ; j++)
+			{
+				if (i % j == 0)
+				{
+					isprime = 0;
+					break;
+				}
+			}
+			if (isprime == 1)
+			{
+				printf("%lu", i);
+			}
 		}
 	}
-	printf("%ld", n);
 	return (0);
 }
