@@ -11,17 +11,21 @@
 
 char *_strdup(char *str)
 {
-	size_t i = strlen(str) + 1;
 	char *p;
+	int i = 0;
 
-	p = malloc(i);
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	p = malloc(i + 1);
 	if (p == NULL)
 	{
 		return (NULL);
 	}
 	else
 	{
-		memcpy(p, str, (sizeof(i) + 1));
+		memcpy(p, str, (i + 1));
 	}
 	return (p);
 }
