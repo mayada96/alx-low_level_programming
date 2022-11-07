@@ -14,6 +14,10 @@ char *_strdup(char *str)
 	char *p;
 	int i = 0;
 
+	if (*str == '\0')
+	{
+		return (NULL);
+	}
 	while (str[i] != '\0')
 	{
 		i++;
