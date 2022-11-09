@@ -12,7 +12,7 @@
 
 char *argstostr(int ac, char **av)
 {
-	char **p;
+	char *p;
 	int i;
 
 	if (ac == 0 || av == NULL)
@@ -31,6 +31,6 @@ char *argstostr(int ac, char **av)
 			printf("%s\n", av[i]);
 		}
 	}
-	return (*p);
+	return (p);
 
 }
