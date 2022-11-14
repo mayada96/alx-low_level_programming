@@ -44,8 +44,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 		ownercp[l] = owner[l];
 	}
 	ownercp[l] = '\0';
-	new_dog->name = name;
+	new_dog->name = namecp;
 	new_dog->age = age;
-	new_dog->owner = owner;
+	new_dog->owner = ownercp;
 	return (new_dog);
 }
