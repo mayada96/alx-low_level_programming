@@ -15,6 +15,10 @@ void print_dog(struct dog *d)
 	{
 		return;
 	}
+	if (d->owner == NULL)
+	{
+		d->owner = "(nil)";
+	}
 	if (d->name == NULL)
 	{
 		d->name = "(nil)";
