@@ -1,4 +1,4 @@
-#inclide "lists.h"
+#include "lists.h"
 
 /**
  * free_listint - free a list
@@ -11,7 +11,8 @@ void free_listint(listint_t *head)
 {
 	while (head)
 	{
-		free(head->n);
+		free(head->next);
 		free(head);
 		head = head->next;
 	}
+}
