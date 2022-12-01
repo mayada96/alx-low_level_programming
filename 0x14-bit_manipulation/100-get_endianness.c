@@ -9,7 +9,7 @@
 int get_endianness(void)
 {
 	int num = 1;
-	char *indian = (char *) & num;
+	char *indian = (char *) &num;
 
 	if (*indian == 1)
 		return (1);
